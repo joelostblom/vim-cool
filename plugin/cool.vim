@@ -60,7 +60,7 @@ function! s:StartHL()
             endif
             let noOf[v:searchforward ? f : !f] += 1
             try
-                silent exe "keepjumps norm! ".(f ? 'n' : 'N' : 'zz')
+                silent exe "keepjumps norm! ".(f ? 'n' : 'N')
             catch /^Vim[^)]\+):E38[45]\D/
                 call setpos('.',rpos)
                 let f += 1
