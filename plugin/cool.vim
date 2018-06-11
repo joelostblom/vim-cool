@@ -70,7 +70,7 @@ function! s:StartHL()
         call winrestview(pos)
         let &wrapscan = ws
     endtry
-    redraw|echo cool_char.@/ noOf[0] '/' noOf[0] + noOf[1] - 1
+    redraw|echo cool_char.@/ noOf[0]'/'noOf[0] + noOf[1] - 1
 endfunction
 
 function! s:StopHL()
